@@ -141,24 +141,13 @@ const imageLoader = document.getElementById("uploader");
 imageLoader.addEventListener('change', uploadImage);
 
 function clearPhoto() {
-    window.location.reload();
-    alert("Click OK to clear photo");
-  }
+var msg;
+msg= "Are you sure you want to delete the PHOTO ? ";
+var agree=confirm(msg);
+if (agree)
+return window.location.reload();
+else
+return false;
+}
   
-
-
- 
-
-// Testing canvas and learning lines
-// ctx.fillText("This is just a Test", 100, 50);
-
-// ctx.fillStyle = "#42e9f5";
-// ctx.fillRect(0, 0, 50, 50);
-
-// ctx.beginPath();
-// ctx.moveTo(canvas.width / 2, canvas.height / 2);
-// ctx.lineTo(300, 0);
-// ctx.lineTo(300, 150);
-// ctx.closePath();
-
-// ctx.fill();
+// coded with passion by Luc aka accolades.dev
