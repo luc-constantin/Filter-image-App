@@ -1,5 +1,5 @@
 # Filter-image-App
-https://github.com/luc-constantin/Filter-image-App/issues/1#issue-790689749
+![Filter Image App](https://user-images.githubusercontent.com/56940002/105281097-a58dc900-5bab-11eb-9687-2ce3f5455340.png)
 ## You can try the app [here](https://luc-constantin.github.io/Filter-image-App/)
 ## A simple Filter App with 8 image filters to boost your photo(s)
 ### I added to the original project:
