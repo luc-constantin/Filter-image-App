@@ -17,8 +17,8 @@
     * colored hover text
     * margin top to buttons
   * __*JavaScript*__
-    * ability to delete the photo uploaded _before_ applying the filter
-    * alert pop up box when click delete the photo
+    * option to delete the photo uploaded _before_ applying the filter
+    * alert pop up box when click _delete_ the photo
   
  
 #### Initial project by @chrisdixon161 Chris Dixon here are the [links to projects](https://fun-javascript-projects.com/)
