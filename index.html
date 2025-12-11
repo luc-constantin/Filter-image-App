@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Filter App</title>
-    <link rel="stylesheet" href="styles.css" />
-<!--brought to you with ♡ by Luc aka <<https://accolades.dev-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Filter App</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <main>
-       <canvas id="canvas"></canvas> 
-    </main>
+  <main>
+    <canvas id="canvas"></canvas>
+    <div id="drop-overlay" class="overlay show">
+      <p>📤 Drag & Drop or Click to Upload</p>
+      <input type="file" id="uploader" />
+    </div>
+  </main>
 
-    <aside>
-        <div class="input-wrapper">
-            <label for="uploader">Select Your File:</label>
-            <input type="file" id="uploader" />
-        </div>
-        <div class="booster">
-            <button>Grayscale</button>
-            <button>Sepia Effect</button>
-            <button>Invert</button>
-            <button>Smart Invert</button>
-            <button>RGB - RBG</button>
-            <button>RGB - BGR</button>
-            <button>RGB - GBR</button>
-            <button>RGB - GRB</button>
-        </div>
-        <div class="controls">
-            <button id="btn1">Clear</button>
-            <button id="btn2">Download</button>
-        </div>
-        <div class="reload">
-            <button id="btn3" onclick="clearPhoto()">Clear Photo</button>
-        </div>
-    </aside>
-    <script src="script.js"></script>
+  <aside>
+    <div class="booster">
+      <button>Grayscale</button>
+      <button>Sepia Effect</button>
+      <button>Invert</button>
+      <button>Smart Invert</button>
+      <button>RGB - RBG</button>
+      <button>RGB - BGR</button>
+      <button>RGB - GBR</button>
+      <button>RGB - GRB</button>
+      <button>Preserve Primary Colors</button>
+      <button>Color Boost</button>
+      <button>High Contrast</button>
+      <button>Blue Tone</button>
+    </div>
+
+    <div class="controls">
+      <button id="btn1">Clear</button>
+      <button id="btn2">Download</button>
+    </div>
+
+    <div class="reload dual-buttons">
+      <button id="btn3" onclick="clearPhoto()">Remove Photo</button>
+      <button id="themeToggle" onclick="toggleTheme()">🌙</button>
+    </div>
+  </aside>
+
+  <div id="theme-popup" class="popup center-popup"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-<!-- original project by Chris Dixon. I added: Clear Photo Buttons; Upload Photo Text; 
-    Smart Invert Buttons; Hover colors on the buttons; margin top to buttons.
-customized by Luc aka accolades.dev-->
